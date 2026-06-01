@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "claude-review"
+version = "0.1.0"
+description = "A focused review surface for a single Claude Code session — watch the latest response, plan, and tasks in a split-terminal pane."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sanju Sunny", email = "6439505+sanjusunny@users.noreply.github.com" }]
+keywords = ["claude", "claude-code", "tui", "terminal", "cli", "review", "rich"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+    "Topic :: Terminals",
+]
+dependencies = ["rich>=13.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/sanjusunny/claude-review"
+Repository = "https://github.com/sanjusunny/claude-review"
+Issues = "https://github.com/sanjusunny/claude-review/issues"
+
+[project.scripts]
+claude-review = "claude_review:cli"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["claude_review.py"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "claude_review.py",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "tests/",
+    "examples/",
+]
