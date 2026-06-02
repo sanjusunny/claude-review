@@ -28,7 +28,7 @@ A read-only review pane for a single [Claude Code](https://claude.com/claude-cod
 Install the bundled skill with the [`skills`](https://github.com/vercel-labs/skills) CLI — it detects your agent(s) and places the skill correctly (`~/.claude/skills/` for Claude Code, plus Cursor, Codex, and others):
 
 ```bash
-npx skills add sanjusunny/claude-review -g
+npx skills add r3al1tymonster/claude-review -g
 ```
 
 Then just ask Claude *"open a review pane for this session"* — it resolves the session, installs the `claude-review` CLI if needed, and hands you the command to run in your other pane. Drop `-g` to install into the current project instead; manage with `npx skills update | ls | rm`.
@@ -36,7 +36,7 @@ Then just ask Claude *"open a review pane for this session"* — it resolves the
 ### As a CLI
 
 ```bash
-pipx install git+https://github.com/sanjusunny/claude-review
+pipx install git+https://github.com/r3al1tymonster/claude-review
 ```
 
 Requires Python 3.9+ and a POSIX terminal (Linux, macOS, WSL).
@@ -92,4 +92,4 @@ Claude Code stores transcripts under `~/.claude/projects/<slug>`, where `<slug>`
 
 ## License
 
-[MIT](LICENSE) © Sanju Sunny
+[MIT](LICENSE) © r3al1tymonster
