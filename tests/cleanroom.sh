@@ -19,7 +19,7 @@
 # native macOS/Windows are covered by the CI OS matrix, the TUI render by a human.
 set -uo pipefail
 
-CRV_REPO="${CRV_REPO:-https://github.com/r3al1tymonster/claude-review}"
+CRV_REPO="${CRV_REPO:-https://github.com/r3al1tym/claude-review}"
 CRV_REF="${CRV_REF:-v0.2.0}"
 
 say() { printf '\n\033[1;36m== %s ==\033[0m\n' "$*"; }

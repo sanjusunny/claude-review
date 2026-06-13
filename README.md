@@ -17,7 +17,7 @@ A read-only review pane for a single [Claude Code](https://claude.com/claude-cod
 Already using Claude Code? Install the skill and let Claude wire it up:
 
 ```bash
-npx skills add r3al1tymonster/claude-review -g
+npx skills add r3al1tym/claude-review -g
 ```
 
 Then just ask Claude *"open a review pane for this session"* — it resolves the session, installs the `claude-review` CLI if needed, and hands you the command to run in your other pane.
@@ -25,7 +25,7 @@ Then just ask Claude *"open a review pane for this session"* — it resolves the
 ### Or install the CLI directly
 
 ```bash
-pipx install git+https://github.com/r3al1tymonster/claude-review@v0.3.0
+pipx install git+https://github.com/r3al1tym/claude-review@v0.3.0
 claude-review
 ```
 
@@ -69,4 +69,4 @@ To try the UI with no live session, a sample transcript ships in the repo: `clau
 
 ## License
 
-[MIT](LICENSE) © r3al1tymonster. The JetBrains Mono fonts under `demo/` (used only to render the GIF, not part of the installed package) are [SIL OFL 1.1](demo/OFL.txt).
+[MIT](LICENSE) © r3al1tym. The JetBrains Mono fonts under `demo/` (used only to render the GIF, not part of the installed package) are [SIL OFL 1.1](demo/OFL.txt).

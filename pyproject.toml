@@ -9,7 +9,7 @@ description = "A focused review surface for a single Claude Code session — wat
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "r3al1tymonster", email = "6439505+r3al1tymonster@users.noreply.github.com" }]
+authors = [{ name = "r3al1tym", email = "6439505+r3al1tym@users.noreply.github.com" }]
 keywords = ["claude", "claude-code", "tui", "terminal", "cli", "review", "rich"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -27,9 +27,9 @@ dependencies = ["rich>=13.0"]
 test = ["pytest>=7.0"]
 
 [project.urls]
-Homepage = "https://github.com/r3al1tymonster/claude-review"
-Repository = "https://github.com/r3al1tymonster/claude-review"
-Issues = "https://github.com/r3al1tymonster/claude-review/issues"
+Homepage = "https://github.com/r3al1tym/claude-review"
+Repository = "https://github.com/r3al1tym/claude-review"
+Issues = "https://github.com/r3al1tym/claude-review/issues"
 
 [project.scripts]
 claude-review = "claude_review:cli"
